@@ -1,2 +1,27 @@
+*{font-family:'Open Sans','sans-serif';font-weight:400;outline:none!important}
+a{text-decoration:none!important}
 
-.btn-b{width:203px;height:52px;}
+.btn-b{width:203px;height:52px;background:url(../images/btn-1.png);cursor:pointer;font-size:17px;color:#fff!important;display:inline-block;text-align:center;line-height:49px}
+
+.footer-container .top-header{background:url(../images/green-line.jpg) 50% 0}
+.footer-container .top-header .top-content{position:relative;padding:32px 0 33px}
+.footer-container .top-header .head-link{text-align:center}
+.footer-container .top-header .heaser-text h2{line-height:49px;color:#fff;font-size:17px;margin:0}
+
+@media (max-width: 979px) {
+	.footer-container .top-header .book{display:none}
+	.footer-container .top-header .top-content{position:relative;padding:5px 0 20px}
+	.footer-container .top-header .heaser-text{text-align:center}
+}
+
+@media (min-width: 980px) {
+	.footer-container .top-header .book{display:none}
+	.footer-container .top-header .top-content{height:117px;padding:32px 0 33px}
+	.footer-container .top-header .head-link{float:right}
+	.footer-container .top-header .heaser-text{float:left}
+}
+
+@media (min-width: 1169px) {
+	.footer-container .top-header .book{position:absolute;left:0;top:-20px;width:109px;height:132px;background:url(../images/book-1.png);display:block}
+	.footer-container .top-header .heaser-text{margin-left:207px}
+}
