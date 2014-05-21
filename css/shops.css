@@ -1,0 +1,25 @@
+.shops .media-heading{margin:0 0 17px}
+.shops .media-heading,
+.shops .media-heading a{color:#515151;font-size:18px;font-weight:300}
+.shops p{margin:0}
+.shops p,
+.shops p *{color:#616161;font-size:14px;line-height:18px;font-weight:300}
+.shops p a{color:#2d8449}
+.shops p a:hover{text-decoration:underline}
+.shops .number-label{width:25px;display:inline-block}
+.shops .number{width:215px;display:inline-block}
+	
+@media (max-width: 480px) {
+	.shops .media{text-align:center}
+	.shops .media-body{clear:both;padding-top:15px;text-align:left}
+	.shops .media .pull-left{margin:0;display:block;width:100%}
+	.shops .media .pull-left img{width:100%}
+	.shops .number{width:auto;margin-right:10px}
+}
+
+@media (min-width: 481px) {
+	.shops .media .pull-left{display:inline-block;padding-top:4px}
+	.shops .media-body{padding-left:25px}
+	.shops .number-label{width:25px;display:inline-block}
+	.shops .number{width:215px;display:inline-block}
+}
