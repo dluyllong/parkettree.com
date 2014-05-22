@@ -8,8 +8,10 @@
 <link rel="shortcut icon" href="img/favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="stylesheet" type="text/css" href="css/products.css"/>
 <link rel="stylesheet" type="text/css" href="css/category.css"/>
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
@@ -56,9 +58,9 @@
 												<div class="form-search form-inline">
 													<div class="search-contain">
 														<div class="search-content form-group">
-															<label for="search">Search:</label>
+															<label>Search:</label>
 															<input type="text" maxlength="128" class="form-control" placeholder="Search...">
-															<button value="" name="q" id="search" autocomplete="off" class="btn btn-success button" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+															<button value="" name="q" autocomplete="off" class="btn btn-success button" type="submit"><i class="glyphicon glyphicon-search"></i></button>
 															<div class="search-autocomplete" id="search_autocomplete"></div>
 														</div>
 													</div>
@@ -151,104 +153,559 @@
 					<div class="main">
 						<div class="main-inner clearfix">
 							<div class="row">
-								<div class="col-lg-9 col-md-9">
-									<div class="page-title">
-										<h1>Winkels</h1>
-									</div>
-									<div class="shops">
-										<ul class="media-list">
-											<li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="media/nieuwegein.jpg" alt=""> </a>
-												<div class="media-body">
-													<h4 class="media-heading"><a href="#">Nieuwegein</a></h4>
-													<p>Nijverheidsweg 9a</p>
-													<p>3433 NP</p>
-													<p>Nieuwegein</p>
-													<p>&nbsp;</p>
-													<p>info@parkettree-nieuwegein.nl</p>
-													<p><span class="number-label">Tel:</span> <span class="number">030 - 6063000</span></p>
-													<p><span class="number-label">Fax:</span> <span class="number">030 - 6067780</span> <a href="#">Meer informatie &gt;</a></p>
-												</div>
-											</li>
-											<li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="media/leeuwarden.jpg" alt=""> </a>
-												<div class="media-body">
-													<h4 class="media-heading"><a href="#">Leeuwarden</a></h4>
-													<p>Zuidvliet 2</p>
-													<p>8921 BL</p>
-													<p>Leeuwarden</p>
-													<p>&nbsp;</p>
-													<p>info@parkettree-leeuwarden.nl</p>
-													<p><span class="number-label">Tel:</span> <span class="number">058-2991999</span></p>
-													<p><span class="number-label">Fax:</span> <span class="number">-</span> <a href="#">Meer informatie &gt;</a></p>
-												</div>
-											</li>
-											<li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="media/groningen.jpg" alt=""> </a>
-												<div class="media-body">
-													<h4 class="media-heading"><a href="#">Groningen</a></h4>
-													<p>Damsterdiep 66</p>
-													<p>9713 EJ</p>
-													<p>Groningen</p>
-													<p>&nbsp;</p>
-													<p>info@parkettree-leeuwarden.nl</p>
-													<p><span class="number-label">Tel:</span> <span class="number">050 318 0025</span></p>
-													<p><span class="number-label">Fax:</span> <span class="number">-</span> <a href="#">Meer informatie &gt;</a></p>
-												</div>
-											</li>
-											<li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="media/arnhem.jpg" alt=""> </a>
-												<div class="media-body">
-													<h4 class="media-heading"><a href="#">Arnhem</a></h4>
-													<p>Ir. J.P. van Muijlwijkstraat 154-156</p>
-													<p>6828 BW</p>
-													<p>Arnhem</p>
-													<p>&nbsp;</p>
-													<p>info@parkettree-arnhem.nl</p>
-													<p><span class="number-label">Tel:</span> <span class="number">026 - 3512814</span></p>
-													<p><span class="number-label">Fax:</span> <span class="number">026 - 351411</span> <a href="#">Meer informatie &gt;</a></p>	
-												</div>
-											</li>
-											<li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="media/apeldoorn.jpg" alt=""> </a>
-												<div class="media-body">
-													<h4 class="media-heading"><a href="#">Apeldoorn</a></h4>
-													<p>Arnhemseweg 177</p>
-													<p>7331 BH</p>
-													<p>Apeldoorn</p>
-													<p>&nbsp;</p>
-													<p>info@parkettree-apeldoorn.nl</p>
-													<p><span class="number-label">Tel:</span> <span class="number">055-5342166</span></p>
-													<p><span class="number-label">Fax:</span> <span class="number">055-5342066</span> <a href="#">Meer informatie &gt;</a></p>
-												</div>
-											</li>
-											<li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="media/shop-amstelveen.jpg" alt=""> </a>
-												<div class="media-body">
-													<h4 class="media-heading"><a href="#">Amstelveen</a></h4>
-													<p>Dorpsstraat 47</p>
-													<p>1182 JB</p>
-													<p>Amstelveen</p>
-													<p>&nbsp;</p>
-													<p>info@parkettree-amstelveen.nl</p>
-													<p><span class="number-label">Tel:</span> <span class="number">020 441 0340</span></p>
-													<p><span class="number-label">Fax:</span> <span class="number">020 453 2662</span> <a href="#">Meer informatie &gt;</a></p>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
 								<div class="col-lg-3 col-md-3">
 									<div class="block">
-										<div class="block-title block-title-center">
-											<strong><span>Parket Tree</span></strong>
-										</div>
-										<div class="block-intro align-center">
-											<p>Voor een <a href="#">vrijblijvende offerte</a> kunt u altijd bij ons terecht.</p>
-											<p>Indien u <a href="#">informatie</a> wenst te ontvangen sturen wij dit u graag toe.</p>
-											<p>Parket Tree<br>KVK Rotterdam 52280713</p>
-											<p>BTW nr. NL 8503.74.832.B01<br>Bank: IBAN NL33 INGB 0664 1837 43</p>
-										</div>
 										<div class="block-content">
-											<div class="fb-plugin">
-												<img src="media/fb-plugin.jpg" alt="">
-											</div>
+											<dl id="narrow-by-list">
+												<dt>Categorieën</dt>
+												<dd>
+													<ol>
+														<li><span>(0)</span><a>Onderhoud Hardwax</a></li>
+														<li><span>(0)</span><a>Basis Hardwax</a></li>
+														<li><span>(0)</span><a>Onderhoud Lak</a></li>
+														<li><span>(0)</span><a>Basis Lak</a></li>
+														<li class="act"><span>(0)</span><a>Onderhoud Olie</a></li>
+														<li><span>(0)</span><a>Basis Olie</a></li>
+														<li><span>(0)</span><a>Onderhoud Kurk</a></li>
+														<li><span>(0)</span><a>Basis Kurk</a></li>
+														<li><span>(0)</span><a>Onderhoud Laminaat</a></li>
+														<li><span>(0)</span><a>Onderhoud PVC</a></li>
+														<li><span>(0)</span><a>Onderhoud vloeibare/vaste was</a></li>
+														<li><span>(0)</span><a>Accessoires</a></li>
+														<li><span>(0)</span><a>Bona Spray Mop</a></li>
+													</ol>
+												</dd>
+												<dt>Prijs</dt>
+												<dd>
+													<p>
+														<input type="text" disabled ="disabled" id="amount" style="" />
+													</p>
+													<div id="slider-range"></div>
+													<div id="search" style="margin:10px 10px 0px 10px;">
+														<input type="text" name="first_price" style="width:40px"/>
+														<input type="text" name="last_price" style="width:40px"/>
+														<button class="button" type ="button" name="search_price" id="search_price"><span><span>Search</span></span></button>
+													</div>
+													<script type="text/javascript">
+													//<![CDATA[  
+														jQuery(function() {
+															
+															var currencies = "€ ";
+															var toolbar_status = "1";
+															var rate = "1";
+															var min = "0"
+																min = Number(min);
+															var max = "500"
+																max = Number(max);
+															var currentMinPrice = "0"
+																currentMinPrice = Number(currentMinPrice);
+															var currentMaxPrice = "500"
+															//alert('min: '+min+'--max: '+ max+ 'currentMin: '+currentMinPrice);
+															currentMaxPrice = Number(currentMaxPrice);
+															var params = "";
+															params = jQuery.trim(params);
+															//slider
+															jQuery( "#slider-range" ).slider({
+																range: true,
+																min: min,
+																max: max,
+																values: [ currentMinPrice, currentMaxPrice ],
+																slide: function( event, ui ) {
+																	jQuery( "#amount" ).val( currencies + ui.values[ 0 ] + " - "+ currencies + ui.values[ 1 ] );
+																	jQuery('input[name="first_price"]').val(ui.values[0]);
+																	jQuery('input[name="last_price"]').val(ui.values[1]);
+																},
+																stop: function( event, ui ) {
+																	var first =   ui.values[0];
+																	var  last =  ui.values[1];
+																	 var baseUrl = 'http://www.plazathemes.com/demo/ma_libra/index.php/mobile-phones/accessories/hair-accessories.html'+'?rate='+rate+'&first='+first+'&last='+last+params;
+																		 ajaxFilter(baseUrl);
+																	
+																}
+															});
+													
+															jQuery( "#amount" ).val( currencies + jQuery( "#slider-range" ).slider( "values", 0 ) +
+																" - "+currencies + jQuery( "#slider-range" ).slider( "values", 1 ) );
+															jQuery('input[name="first_price"]').val(jQuery( "#slider-range" ).slider( "values", 0 ));
+															jQuery('input[name="last_price"]').val(jQuery( "#slider-range" ).slider( "values", 1 ));   
+															 
+															 
+															//search price from input box
+															jQuery('#search_price').each(function(){
+																jQuery(this).on('click',function(){
+																	var first_price = jQuery('input[name="first_price"]').val();
+																	var last_price = jQuery('input[name="last_price"]').val();
+																	var rate = "1";
+																	var urlFilter = 'http://www.plazathemes.com/demo/ma_libra/index.php/mobile-phones/accessories/hair-accessories.html'+'?rate='+rate+'&first='+first_price+'&'+'last='+last_price+params;
+																	ajaxFilter(urlFilter);
+																	return false;
+																})
+															});
+															
+															
+															jQuery('#slider-range a:first').addClass('first_item');
+															jQuery('#slider-range a:last').addClass('last_item');
+															
+															//tooltip
+															jQuery('.button.btn-cart').attr('data-original-title',jQuery('button.btn-cart').attr('title'));
+															jQuery('.link-wishlist').attr('data-original-title',jQuery('.link-wishlist').attr('title'));
+															jQuery('.link-compare').attr('data-original-title',jQuery('.link-compare').attr('title'));
+															jQuery('.email-friend-a').attr('data-original-title',jQuery('.email-friend-a').attr('title'));
+															jQuery('.brand_item').attr('data-original-title',jQuery('.brand_item').attr('title'));
+															jQuery('button.btn-cart, .link-wishlist, .link-compare,.email-friend-a,.brand_item').attr('rel', 'tooltip');
+															jQuery("[rel=tooltip]").tooltip();
+															 
+														});
+													 //]]>
+													</script> 
+												</dd>
+												<dt>Kleur</dt>
+												<dd>
+													<ol>
+														<li><span>(2)</span><a class="ajaxLayer">Calvin Klein</a></li>
+														<li><span>(0)</span><a>Wit</a></li>
+														<li><span>(15)</span><a class="ajaxLayer">Naturel</a></li>
+														<li><span>(62)</span><a class="ajaxLayer">Kleurloos</a></li>
+														<li><span>(5)</span><a class="ajaxLayer">Caramel</a></li>
+														<li><span>(6)</span><a class="ajaxLayer">Antraciet</a></li>
+														<li><span>(8)</span><a class="ajaxLayer">Eiken</a></li>
+														<li><span>(23)</span><a class="ajaxLayer">Berken</a></li>
+														<li><span>(54)</span><a class="ajaxLayer">Ebben</a></li>
+														<li><span>(3)</span><a class="ajaxLayer">Antiek</a></li>
+														<li><span>(0)</span><a class="ajaxLayer">Gothic</a></li>
+														<li><span>(2)</span><a class="ajaxLayer">Grijs</a></li>
+														<li><span>(6)</span><a class="ajaxLayer">Kersen</a></li>
+														<li><span>(34)</span><a class="ajaxLayer">Transparant wit</a></li>
+													</ol>
+												</dd>
+											</dl>
 										</div>
 									</div>
+									<div class="block-more-info">
+										<div class="img"><img src="media/prg.jpg" alt=""></div>
+										<div class="block-inner">
+											<h3>Prima Prijs Garantie</h3>
+											<p>Parket Tree hanteert sinds jaar en dag eerlijke en betrouwbare prijzen! Desondanks kan het voorkomen dat andere vloer-aanbieders soms een lagere prijs hanteren. </p>
+											<p>Is dit het geval? Profiteer dan van onze Prima Prijs Garantie.</p>
+											<a href="#" class="read-more">Lees meer</a>
+										</div>
+									</div>
+									<!--/block-more-info-->
+									
+									<div class="block-more-info">
+										<div class="img"><img src="media/qa.jpg" alt=""></div>
+										<div class="block-inner">
+											<h3>Top 10 Adviseurs</h3>
+											<p>Als gespecialiseerd bedrijf in vloeren geven wij graag advies en tips over de laatste trends en ontwikkelingen binnen de parket branche. </p>
+											<p>Bekijk de actuele adviezen van onze adviseurs en laat u inspireren!</p>
+											<a href="#" class="read-more">Lees meer</a>
+										</div>
+									</div>
+									<!--/block-more-info-->
+									
+									<div class="block-more-info">
+										<div class="img"><img src="media/m2.jpg" alt=""></div>
+										<div class="block-inner">
+											<h3>Meten is Weten</h3>
+											<p>Bij het aanschaffen van een nieuwe vloer is het belangrijk om de exacte oppervlakte te weten zodat u de juiste hoeveelheid koopt voor de juiste prijs. </p>
+											<p>Bekijk hoe u de oppervlakte het best kunt berekenen en zo kosten kunt besparen!</p>
+											<a href="#" class="read-more">Lees meer</a>
+										</div>
+									</div>
+									<!--/block-more-info-->
+									
+									<div class="verified"><img src="images/icon-verify.png" alt=""></div>
+								</div>
+								<div class="col-lg-9 col-md-9">
+									<div class="category-intro">
+										<div class="img"><img src="media/onderhoud-olie.jpg" alt=""></div>
+										<div class="info">
+											<h1>Onderhoud Olie</h1>
+											<p>Onderhoud voor Olie afgewerkte houten vloeren.</p>
+											<p>Voor meer informatie omtrent het bestellen:</p>
+											<ul>
+												<li>- Betaling</li>
+												<li>- Leveringsvoorwaarden</li>
+												<li>- Algemene voorwaarden</li>
+											</ul>
+										</div>
+									</div>
+									<!--/category-intro-->
+									
+									<div class="category-products">
+										<div class="products-grid row row-full">
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="products-grid row row-full">
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="products-grid row row-full">
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="products-grid row row-full">
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="products-grid row row-full">
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+												<div class="item product">
+													<div class="item-inner">
+														<div class="label-pro-new"></div>
+														<div class="box-item">
+															<div class="product-content">
+																<a class="product-image" href="#"><img alt="" src="media/product-1.jpg"></a>
+																
+															</div>
+															<div class="name-cart">
+																<h2 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h2>
+																<div class="product-description">
+																	Deze olie zorgt voor een matte, duurzame en waterafstotende...
+																</div>
+																<div class="price-box"> <span id="product-price-3" class="regular-price"> <span class="price">€ 32.50</span> </span> </div>
+															</div>
+															<div class="action">
+																<button class="button-default button-highlight purchase"><i class="icon-cart"></i><span>Bestellen</span></button>
+																<button class="button-default button-dark read"><i class="icon-info"></i><span>Meer info</span></button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!--/category-products-->
+									
+									<!--/products-grid--> 
 								</div>
 							</div>
 						</div>
@@ -426,8 +883,10 @@
 			<!--/footer-container--> 
 		</div>
 		<!--/container-inner--> 
-	</div><!--/ma-page-->
-</div><!--/ma-wrapper-->
+	</div>
+	<!--/ma-page--> 
+</div>
+<!--/ma-wrapper--> 
 <!--/ma-wrapper-->
 
 </body>

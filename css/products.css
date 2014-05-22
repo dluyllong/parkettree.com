@@ -1,0 +1,18 @@
+.product{position:relative;padding:30px 0}
+.product .product-name{margin:0}
+.product .product-name a{color:#616161;font-size:16px;font-weight:400}
+.product .product-description{font-size:16px;font-weight:300;color:#616161}
+.product .price-box .price{font-size:16px;color:#1ec916}
+.product .product-content{width:100%;padding:10px 0;border:1px solid #e3e6ec;border-radius:20px;text-align:center}
+.product .product-content img{width:90%}
+
+.label-pro-new{width:7vw;height:7vw;position:absolute;z-index:9;left:0;top:40px;background:url(../images/label-new.png);background-size:cover}
+
+.product .action{overflow:hidden;padding:20px 0 0;white-space:nowrap}
+.product .action .button-default{width:48%;float:left}
+.product .action .button-default + .button-default{float:right}
+
+@media (max-width: 767px) {
+	.label-pro-new{width:20vw;height:20vw;top:15px}
+	.product{padding:15px 0}
+}
