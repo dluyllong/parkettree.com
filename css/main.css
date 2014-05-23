@@ -157,6 +157,7 @@ h1.logo strong{position:absolute;left:-9999px;top:-9999px}
 .block-more-info p{padding-top:10px;font-size:14px}
 .block-more-info .read-more{margin:15px 0 0;border:1px solid #dfdfdf;border-radius:20px;border-bottom:1px solid #efefef;display:block;text-align:center;font-size:12px;color:#888;height:28px;line-height:25px;background: #ededed;background: -moz-linear-gradient(top,  #ededed 0%, #d3d3d3 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#d3d3d3));background: -webkit-linear-gradient(top,  #ededed 0%,#d3d3d3 100%);background: -o-linear-gradient(top,  #ededed 0%,#d3d3d3 100%);background: -ms-linear-gradient(top,  #ededed 0%,#d3d3d3 100%);background: linear-gradient(to bottom,  #ededed 0%,#d3d3d3 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#d3d3d3',GradientType=0 )}
 .verified{text-align:center;padding:25px 0 0}
+.verified img{max-width:100%}
 
 .icon-cart{width:25px;height:18px;background:url(../images/icon-cart.png)}
 .icon-info{width:21px;height:21px;background:url(../images/icon-info.png)}

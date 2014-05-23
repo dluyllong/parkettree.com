@@ -27,9 +27,51 @@
 .category-intro .info ul{padding:10px 0 0;list-style:none}
 .category-intro .info li{font-size:14px}
 
+.category-products{padding:30px 0 0}
+.category-products .view-mode a{font-size:24px;color:#cfcfcf}
+.category-products .view-mode a.act{color:#9bb805}
+
+.toolbar{background:#fbfbfb;border:1px solid #e3e6ec;border-radius:20px;padding:15px 20px}
+.toolbar .ma-pager *{font-size:14px;color:#888;font-weight:normal;vertical-align:top;line-height:33px}
+.toolbar .ma-pager a{cursor:pointer}
+.toolbar .ma-pager label{margin:0}
+.toolbar .ma-pager > div{padding:0}
+.toolbar .ma-pager .limiter{text-align:right}
+.toolbar .ma-pager .view-mode{text-align:left}
+.toolbar .pages{text-align:center}
+
+.toolbar .pages ol{padding:0;list-style:none;display:inline-block;margin:0 0 0 5px}
+.toolbar .pages ol li{display:inline}
+.toolbar .pages ol a{background:none;display:inline;padding:0;border:0}
+.toolbar .pages ol a.next,
+.toolbar .pages ol a.prev{position:relative;top:0}
+.toolbar .pages .current{color:#9bb805}
+.toolbar .btn{height:33px;line-height:20px}
+.toolbar .caret{position:relative;top:9px;margin-left:10px}
+
+
+@media (max-width: 991px) {
+	.block-more-info{position:absolute;left:-9999px;top:-9999px}
+}
+
+@media (max-width: 767px) {
+	.footer-container .top-header .book{display:none}
+	.footer-container .top-header .top-content{position:relative;padding:5px 0 20px}
+	.footer-container .top-header .heaser-text{text-align:center;padding-bottom:20px}
+	.ma-footer-container .row *{text-align:center}
+	
+	.toolbar .ma-pager > div:nth-child(odd){text-align:left}
+	.toolbar .ma-pager > div:nth-child(even){text-align:right}
+	.toolbar .ma-pager .pages,
+	.toolbar .ma-pager .limiter{margin-top:10px}
+}
+
 @media (max-width: 480px) {
 	.category-intro{padding-bottom:120px}
 	.category-intro .img{position:absolute;bottom:0;left:0;width:100%}
 	.category-intro .img img{width:auto;height:100px}
 	.category-intro .info{display:block;padding:0 15px;width:auto}
+	
+	.toolbar .ma-pager > div.col-xs-6{width:100%;text-align:center}
+	.toolbar .ma-pager > div.col-xs-6 + div.col-xs-6{margin-top:10px}
 }

@@ -1,0 +1,8 @@
+#checkout-progress-wrapper .block-content{border:0;padding:0}
+#checkout-progress-wrapper .block-title{border:1px solid #e1e4eb;border-radius:20px;padding:10px 15px;margin:0 0 20px}
+#checkout-progress-wrapper .block-title span{font-size:18px;color:#616161;padding:0;line-height:34px}
+#checkout-progress-wrapper dt{color:#616161;font-size:16px;font-weight:normal;padding:7px 0 7px 30px}
+
+@media (max-width: 991px) {
+	#checkout-progress-wrapper{position:absolute;left:-9999px;top:-9999px}
+}
