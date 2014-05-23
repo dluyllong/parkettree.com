@@ -48,12 +48,11 @@ h1.logo strong{position:absolute;left:-9999px;top:-9999px}
 .pt_menu.act .parentMenu > a span,
 .pt_menu .parentMenu > a span:hover{background:#363636}
 .pt_menu + .pt_menu{margin-left:18px}
-
 /* end header */
 
 /* brand slider */
 .ma-brand-slider-contain{padding:40px 0 30px;border-top:1px solid #edeff3;background:url(../images/shop-bg.jpg)}
-.ma-brand-slider-contain .bx-wrapper{position:relative;overflow:hidden;padding-top:56px;margin-top:-56px}
+.ma-brand-slider-contain .bx-wrapper{position:relative;overflow:hidden;box-sizing:content-box;padding-top:56px;margin-top:-60px}
 .ma-brand-slider-contain .bx-viewport{overflow:visible!important;position:relative;left:-38px}
 .ma-brand-slider-contain .bx-slider{height:144px;margin:0;padding:0}
 .ma-brand-slider-contain li{height:144px;width:248px;padding-left:38px}
@@ -211,7 +210,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 }
 
 @media (max-width: 991px) {
-	.main-inner .row > div + div{padding-top:20px}
+	.main-inner > .row > div + div{padding-top:20px}
 	.header-top .headline :first-child{margin-right:0!important}
 	#search_mini_form{left:auto;right:0}
 	.footer-container .top-header .book{display:none}
@@ -225,7 +224,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 	.footer-container .top-header .top-content{min-height:117px;padding:32px 0 33px}
 	.footer-container .top-header .head-link{text-align:right}
 	
-	.ma-brand-slider-contain .bx-wrapper{max-width:100%!important;width:100%!important;left:-10px;padding:0 10px;box-sizing:content-box;padding-top:56px;margin-top:-56px}
+	.ma-brand-slider-contain .bx-wrapper{max-width:100%!important;width:100%!important;left:-10px;padding-left:10px;padding-right:10px}
 	.ma-brand-slider-contain .bx-viewport{overflow:visible!important;left:-10px}
 	.ma-brand-slider-contain .bx-controls-direction .bx-prev{right:51px}
 	.ma-brand-slider-contain .bx-controls-direction .bx-next{right:10px}
@@ -233,7 +232,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 	.parentMenu > a span{font-size:12px}
 }
 
-@media (max-width: 1169px) {
+@media (max-width: 1199px) {
 	.box-header{text-align:center}
 	.box-header > *{display:inline-block}
 	.header-top .headline :first-child{margin-right:40px}
@@ -242,14 +241,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 	.parentMenu > a span{font-size:15px}
 }
 
-@media (min-width: 1170px) {
+@media (min-width: 1200px) {
 	.box-header > *{float:right}
 	.header-top .headline :first-child{margin-right:60px}
 	
 	.footer-container .top-header .book{position:absolute;left:0;top:-20px;width:109px;height:132px;background:url(../images/book-1.png);display:block}
 	.footer-container .top-header .heaser-text{padding-left:207px}
 	
-	.ma-brand-slider-contain .bx-wrapper{max-width:100%!important;width:100%!important;left:-38px;padding:0 38px;box-sizing:content-box;padding-top:56px;margin-top:-56px}
+	.ma-brand-slider-contain .bx-wrapper{max-width:100%!important;width:100%!important;left:-38px;padding-left:38px;padding-right:38px}
+	.ma-brand-slider-contain .bx-viewport{overflow:visible!important;left:-38px}
+	.ma-brand-slider-contain .bx-controls-direction .bx-prev{right:79px}
+	.ma-brand-slider-contain .bx-controls-direction .bx-next{right:38px}
+	
+	.header-top .headline{text-align:left}
+	.header-menu{text-align:right}
+	.parentMenu > a span{font-size:1.4vw}
+}
+
+@media (max-width: 1200px) {
+	.box-header > *{float:right}
+	.header-top .headline :first-child{margin-right:60px}
+	
+	.footer-container .top-header .book{position:absolute;left:0;top:-20px;width:109px;height:132px;background:url(../images/book-1.png);display:block}
+	.footer-container .top-header .heaser-text{padding-left:207px}
+	
+	.ma-brand-slider-contain .bx-wrapper{max-width:100%!important;width:100%!important;left:-38px}
 	.ma-brand-slider-contain .bx-viewport{overflow:visible!important;left:-38px}
 	.ma-brand-slider-contain .bx-controls-direction .bx-prev{right:79px}
 	.ma-brand-slider-contain .bx-controls-direction .bx-next{right:38px}

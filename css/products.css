@@ -6,13 +6,33 @@
 .product .product-content{width:100%;padding:10px 0;border:1px solid #e3e6ec;border-radius:20px;text-align:center}
 .product .product-content img{width:90%}
 
-.label-pro-new{width:7vw;height:7vw;position:absolute;z-index:9;left:0;top:40px;background:url(../images/label-new.png);background-size:cover}
+.label-pro-new{width:7vw;height:7vw;position:absolute;z-index:9;left:0;top:30px;background:url(../images/label-new.png);background-size:cover}
 
 .product .action{overflow:hidden;padding:20px 0 0;white-space:nowrap}
 .product .action .button-default{width:48%;float:left}
 .product .action .button-default + .button-default{float:right}
 
-@media (max-width: 767px) {
-	.label-pro-new{width:20vw;height:20vw;top:15px}
+@media (max-width: 480px) {
+	.label-pro-new{width:20vw;height:20vw}
 	.product{padding:15px 0}
+	.products-grid.row > div{width:100%;margin:0;padding-left:0;padding-right:0}
+	.product .product-content img{width:60%}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.label-pro-new{width:15vw;height:15vw}
+	.products-grid.row > div:nth-child(0),
+	.products-grid.row > div:nth-child(2n+1){left:-15px;position:relative}
+	.products-grid.row > div:nth-child(2n){right:-15px;position:relative}
+}
+
+@media (max-width: 767px) {
+	.label-pro-new{top:15px}
+	.product{padding:15px 0}
+}
+
+@media (min-width: 768px) {
+	.products-grid.row > div:nth-child(0),
+	.products-grid.row > div:nth-child(3n+1){left:-15px;position:relative}
+	.products-grid.row > div:nth-child(3n){right:-15px;position:relative}
 }
