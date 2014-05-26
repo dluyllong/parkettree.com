@@ -185,6 +185,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 }
 .button-dark span{color:#888}
 
+.box-wrapper{border:1px solid #e1e4eb;border-radius:20px}
+.box-wrapper .page-title{margin:15px 15px 0}
+
+.input-text{border:1px solid #e1e4eb;padding:5px;height:31px;line-height:21px;width:100%;font-size:14px;resize:none}
+textarea.input-text{height:150px}
+
 @media (max-width: 480px) {
 	.nav-container{position:absolute;left:-9999px;top:-9999px}
 	.nav-container-mobile{text-align:center;padding:20px 0 0}
