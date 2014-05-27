@@ -242,13 +242,14 @@ textarea.input-text{height:150px}
 	.ma-brand-slider-contain .bx-controls-direction .bx-next{right:10px}
 	
 	.parentMenu > a span{font-size:12px}
+	.pt_menu + .pt_menu{margin-left:0.4vw}
+	h1.logo img{width:100%}
 }
 
 @media (max-width: 1199px) {
 	.box-header{text-align:center}
 	.box-header > *{display:inline-block}
 	.header-top .headline :first-child{margin-right:40px}
-	h1.logo{text-align:center}
 	.header-menu{text-align:center}
 	.parentMenu > a span{font-size:15px}
 }
@@ -283,6 +284,9 @@ textarea.input-text{height:150px}
 	.ma-brand-slider-contain .bx-controls-direction .bx-next{right:38px}
 	
 	.header-top .headline{text-align:left}
-	.header-menu{text-align:right}
 	.parentMenu > a span{font-size:1.4vw}
+}
+
+@media (min-width: 1201px) {
+	.parentMenu > a span{font-size:19px}
 }

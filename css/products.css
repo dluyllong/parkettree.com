@@ -13,22 +13,19 @@
 .product .action .button-default + .button-default{float:right}
 
 .products-group{position:relative;top:-20px}
-.products-group .item-slide{width:30%}
-
-.products-group .bx-wrapper{position:relative;overflow:hidden;box-sizing:content-box;padding-top:20px;margin-top:-25px}
-.products-group .bx-viewport{overflow:visible!important}
-.products-group .bx-slider{height:144px;margin:0;padding:0}
+.products-group .bx-wrapper{position:relative;box-sizing:content-box;padding-top:20px;margin-top:-25px}
+.products-group .bx-slider{margin:0;padding:0}
 .products-group .bx-controls-direction a{width:35px;height:35px;background:url(../images/arrow-slide-1.png);cursor:pointer;position:absolute;top:0;overflow:hidden;text-indent:-9999px}
-.products-group .bx-controls-direction .bx-prev{right:41px}
-.products-group .bx-controls-direction .bx-next{background-position:100% 0;right:0}
-.products-group .item-slide{width:300px}
+.products-group .bx-controls-direction .bx-prev{right:56px}
+.products-group .bx-controls-direction .bx-next{background-position:100% 0;right:15px}
+.products-group .item-slide{padding:0 15px}
 
 @media (max-width: 480px) {
 	.label-pro-new{width:20vw;height:20vw}
 	.product{padding:15px 0}
 	.products-grid.row > div{width:100%;margin:0;padding-left:0;padding-right:0}
 	.product .product-content img{width:60%}
-	.product .action .button-default{width:100%;float:none}
+	.product .action .button-default{width:100%;float:none;display:block}
 	.product .action .button-default + .button-default{margin-top:5px}
 }
 
@@ -48,4 +45,15 @@
 	.products-grid.row > div:nth-child(0),
 	.products-grid.row > div:nth-child(3n+1){left:-15px;position:relative}
 	.products-grid.row > div:nth-child(3n){right:-15px;position:relative}
+	.label-pro-new{width:80px;height:80px}
+}
+
+@media (max-width: 991px) {
+	.products-group .label-pro-new{width:10vw;height:10vw}
+	.products-group .product .action .button-default{width:100%;float:none;display:block}
+	.products-group .product .action .button-default + .button-default{margin-top:5px}
+}
+
+@media (min-width: 992px) {
+	
 }
