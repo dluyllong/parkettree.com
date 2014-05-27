@@ -4,3 +4,5 @@
 #contactForm .checkbox label{font-size:14px;font-weight:400;color:#868686;display:inline-block}
 #contactForm .checkbox{display:inline-block;width:135px;font-size:14px}
 #contactForm .checkboxes{font-size:0}
+#contactForm .buttons-set{text-align:right}
+#contactForm button{padding-left:15px;padding-right:15px}
