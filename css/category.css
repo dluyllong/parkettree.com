@@ -64,13 +64,14 @@
 	.toolbar .ma-pager > div:nth-child(even){text-align:right}
 	.toolbar .ma-pager .pages,
 	.toolbar .ma-pager .limiter{margin-top:10px}
-}
-
-@media (max-width: 480px) {
+	
 	.category-intro{padding-bottom:120px}
 	.category-intro .img{position:absolute;bottom:0;left:0;width:100%}
 	.category-intro .img img{width:auto;height:100px}
 	.category-intro .info{display:block;padding:0 15px;width:auto}
+}
+
+@media (max-width: 480px) {
 	
 	.toolbar .ma-pager > div.col-xs-6{width:100%;text-align:center}
 	.toolbar .ma-pager > div.col-xs-6 + div.col-xs-6{margin-top:10px}

@@ -3,12 +3,12 @@
 <head>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,300' rel='stylesheet' type='text/css'>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Heading</title>
 <link rel="shortcut icon" href="img/favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/main.css"/>
-<link rel="stylesheet" type="text/css" href="css/checkout.css"/>
+<link rel="stylesheet" type="text/css" href="css/cart.css"/>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
@@ -137,7 +137,7 @@
 							<label>U bevind zich hier:</label>
 							<ol class="breadcrumb">
 								<li><a href="#">Home</a></li>
-								<li class="active"><span>Bestelling afronden</span></li>
+								<li class="active"><span>Winkelwagen</span></li>
 							</ol>
 						</div>
 					</div>
@@ -151,139 +151,131 @@
 						<div class="main-inner clearfix">
 							<div class="row">
 								<div class="page-title col-lg-12">
-									<h1>Bestelling afronden</h1>
+									<h1>Winkelwagen</h1>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-lg-9 col-md-9">
-									<ol id="checkoutSteps" class="opc">
-										<li class="section allow active" id="opc-login">
-											<div class="step-title">
-												<span class="number">1</span>
-												<h2>Bestelmethode</h2>
-												<a href="#">Edit</a>
-											</div>
-											<div class="step a-item" id="checkout-step-login">
-												<div class="row">
-													<div class="col-lg-6 col-md-6 col-sm-6">
-														<h3>Ik ben een nieuwe klant</h3>
-														
-														<p>Wanneer u nog geen account heeft kunt u deze hier aanmaken. U kunt hiermee in de toekomst gemakkelijk bestellingen plaatsen en eerdere bestellingen inzien. </p>
-														
-														<ul class="form-list">
-															<li class="control">
-																<input type="radio" class="radio" value="guest" id="login:guest" name="checkout_method">
-																<label for="login:guest">Anoniem afrekenen</label>
-															</li>
-															<li class="control">
-																<input type="radio" class="radio" value="register" id="login:register" name="checkout_method">
-																<label for="login:register">Account aanmaken</label>
-															</li>
-														</ul>
-														
-														<div class="buttons-set">
-															<button onclick="checkout.setMethod();" class="button-light button" type="button" id="onepage-guest-register-button"><span><span>Continue</span></span></button>
-														</div>
-													</div>
-													<div class="col-lg-6 col-md-6 col-sm-6">
-														<h3>Login</h3>
-														<form method="post" action="loginPost" id="login-form">
-															<fieldset>
-																<input type="hidden" value="OmHJqJJP7pjbyBzU" name="form_key">
-																<p>Heeft u al een account? Dan kunt u hieronder inloggen. </p>
-																<ul class="form-list">
-																	<li>
-																		<label class="required" for="login-email"><em>*</em>E-mailadres</label>
-																		<div class="input-box">
-																			<input type="text" value="" name="login[username]" id="login-email" class="input-text required-entry validate-email">
-																		</div>
-																	</li>
-																	<li>
-																		<label class="required" for="login-password"><em>*</em>Password</label>
-																		<div class="input-box">
-																			<input type="password" name="login[password]" id="login-password" class="input-text required-entry">
-																		</div>
-																	</li>
-																</ul>
-																<input type="hidden" value="checkout" name="context">
-																<div class="buttons-set">
-																	<button onclick="onepageLogin(this)" class="button-light button" type="submit"><span><span>Login</span></span></button>
-																	<a class="forgot" href="http://www.plazathemes.com/demo/ma_libra/index.php/customer/account/forgotpassword/">Wachtwoord vergeten?</a>
-																</div>
-															</fieldset>
-														</form>
-													</div>
+								<div class="col-lg-12">
+									<form method="post" action="updatePost" id="cart-form">
+										<input type="hidden" value="RF1kBB68K2bZ7roF" name="form_key">
+										<fieldset>
+											
+											<table class="data-table cart-table table" id="shopping-cart-table">
+												<colgroup>
+												<col width="1">
+												<col width="1">
+												<col>
+												<col width="1">
+												<col width="1">
+												<col width="1">
+												</colgroup>
+												<thead>
+													<tr class="first last">
+														<th class="a-center" rowspan="1">Verwijder</th>
+														<th class="a-center" rowspan="1">Product foto</th>
+														<th class="a-center" rowspan="1"><span class="nobr">Product naam</span></th>
+														<th class="a-center" rowspan="1">Aantal</th>
+														<th colspan="1" class="a-center"><span class="nobr">Prijs per stuk</span></th>
+														<th colspan="1" class="a-center">Prijs per stuk</th>
+													</tr>
+												</thead>
+												<tfoot>
+													<tr class="first last">
+														<td class="a-right last" colspan="50"><button class="button button-light-md btn-continue" type="button"><span><span>Verder winkelen</span></span></button>
+															<button id="empty_cart_button" class="button button-light-md btn-empty" value="empty_cart" name="update_cart_action" type="submit"><span><span>Maak winkelwagen leeg</span></span></button>
+															<button class="button button-light-md btn-update" value="update_qty" name="update_cart_action" type="submit"><span><span>Update winkelwagen</span></span></button></td>
+													</tr>
+												</tfoot>
+												<tbody>
+													<tr class="first last odd">
+														<td class="a-center"><a class="btn-remove btn-remove2" title="Verwijder" href="#">Remove item</a></td>
+														<td class="hidden-phone"><a class="product-image" href="#"><img alt="Nulla urna cursus" src="media/img-pd-1.jpg"></a></td>
+														<td class="a-center"><h2 class="product-name"> <a href="#">Nulla urna cursus</a> </h2></td>
+														<td class="a-center"><input maxlength="12" class="input-text qty" size="4" value="2" name="cart[1769][qty]"></td>
+														<td class="a-right"><span class="cart-price"> <span class="price">$60.00</span> </span></td>
+														<td class="a-right last"><span class="cart-price"> <span class="price">$120.00</span> </span></td>
+													</tr>
+												</tbody>
+											</table>
+											
+										</fieldset>
+									</form>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 col-md-6">
+									<div class="crosssell">
+										<h2>Wellicht heeft u ook interesse in deze producten:</h2>
+										<ul id="crosssell-products-list">
+											<li class="item odd"> <a title="Felis ut eleifend" href="#" class="product-image"><img alt="" height="160" src="media/product-1.jpg"></a>
+												<div class="product-details">
+													<h3 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h3>
+													<p>Deze olie zorgt voor een matte, duurzame en waterafstotende...</p>
+													<div class="price-box"> <span  class="regular-price"> <span class="price">€ 32.50		</span> </span> </div>
+													
+													<button class="button button-default button-highlight btn-cart" type="button" rel="tooltip"><i class="icon-cart"></i><span>Bestellen</span></button>
 												</div>
-											</div>
-										</li>
-										<li class="section allow">
-											<div class="step-title">
-												<span class="number">2</span>
-												<h2>Factuuradres</h2>
-												<a href="#">Edit</a>
-											</div>
-										</li>
-										<li class="section allow">
-											<div class="step-title">
-												<span class="number">3</span>
-												<h2>Verzendadres</h2>
-												<a href="#">Edit</a>
-											</div>
-										</li>
-										<li class="section allow">
-											<div class="step-title">
-												<span class="number">4</span>
-												<h2>Verzendmethode</h2>
-												<a href="#">Edit</a>
-											</div>
-										</li>
-										<li class="section allow">
-											<div class="step-title">
-												<span class="number">5</span>
-												<h2>Betaalmethode</h2>
-												<a href="#">Edit</a>
-											</div>
-										</li>
-										<li class="section allow">
-											<div class="step-title">
-												<span class="number">6</span>
-												<h2>Bestelling versturen</h2>
-												<a href="#">Edit</a>
-											</div>
-										</li>
-										<li class="section">
-											<div class="notice">
-												<p>Met uw bestelling gaat u akkoord met onze <a href="#">algemene voorwaarden.</a></p>
-												<p>Mocht u nog vragen hebben omtrent de bestelling dan kunt u ten alle tijden <a href="#">contact</a> met ons opnemen.</p>
-											</div>
-										</li>
-									</ol>
+											</li>
+											<li class="item last even"> <a href="#" class="product-image"><img alt="" height="160" src="media/product-1.jpg"></a>
+												<div class="product-details">
+													<h3 class="product-name"><a href="#">Blue Dolphin Olie MAT</a></h3>
+													<p>Deze olie zorgt voor een matte, duurzame en waterafstotende...</p>
+													<div class="price-box"> <span  class="regular-price"> <span class="price">€ 32.50		</span> </span> </div>
+													
+													<button class="button button-default button-highlight btn-cart" type="button" rel="tooltip"><i class="icon-cart"></i><span>Bestellen</span></button>
+												</div>
+											</li>
+										</ul>
+									</div>
 								</div>
 								<div class="col-lg-3 col-md-3">
-									<div id="checkout-progress-wrapper">
-										<div class="block block-progress opc-block-progress">
-											<div class="block-title"> <strong><span>Bestelproces</span></strong> </div>
-											<div class="block-content">
-												<dl>
-													<div id="billing-progress-opcheckout">
-														<dt>Factuuradres</dt>
-													</div>
-													<div id="billing-progress-opcheckout">
-														<dt>Verzendadres</dt>
-													</div>
-													<div id="billing-progress-opcheckout">
-														<dt>Verzendmethode</dt>
-													</div>
-													<div id="billing-progress-opcheckout">
-														<dt>Betaalmethode</dt>
-													</div>
-													<div id="billing-progress-opcheckout">
-														<dt>Bestelling versturen</dt>
-													</div>
-												</dl>
-												<div class="verified"><img alt="" src="images/icon-verify.png"></div>
+									<form method="post" action="couponPost" id="discount-coupon-form">
+										<div class="discount">
+											<h2>Kortingscoupon:</h2>
+											<div class="discount-form">
+												<label for="coupon_code">Vul hier uw couponcode in:</label>
+												<input type="hidden" value="0" id="remove-coupone" name="remove">
+												<div class="input-box">
+													<input value="" name="coupon_code" id="coupon_code" class="input-text">
+												</div>
+												<div class="buttons-set">
+													<button value="Apply Coupon" onclick="discountForm.submit(false)" class="button-light-md button" title="Apply Coupon" type="button"><span><span>Apply Coupon</span></span></button>
+												</div>
 											</div>
 										</div>
+										
+									</form>
+									<div class="verified"><img alt="" src="images/icon-verify.png"></div>
+								</div>
+								<div class="col-lg-3 col-md-3">
+									<div class="checkout-next">
+										<table id="shopping-cart-totals-table">
+											<colgroup>
+												<col>
+												<col width="1">
+											</colgroup>
+											<tfoot>
+												<tr>
+													<td colspan="1" class="a-right" style=""><strong>Totaal:</strong></td>
+													<td class="a-right" style=""><strong><span class="price">€ 22,50</span></strong></td>
+												</tr>
+											</tfoot>
+											<tbody>
+												<tr>
+													<td colspan="1" class="a-right" style=""> Subtotaal</td>
+													<td class="a-right" style=""><span class="price">€ 22,50</span></td>
+												</tr>
+												<tr>
+													<td colspan="1" class="a-right" style=""> Verzendkosten</td>
+													<td class="a-right" style=""><span class="price">€ &nbsp;0,00</span></td>
+												</tr>
+											</tbody>
+										</table>
+										<ul class="checkout-types">
+											<li>
+												<button onclick="" class="button btn-proceed-checkout btn-checkout button-highlight-md" title="Checkout" type="button"><span><span>Bestelling afronden</span></span></button>
+											</li>
+										</ul>
 									</div>
 								</div>
 							</div>
