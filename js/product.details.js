@@ -32,6 +32,21 @@ jQuery(document).ready(function($){
 		controls: true
 	});
 	
+	jQuery('.more-views ul').bxSlider({
+		infiniteLoop: false,
+		speed: 4000,
+		pause: 600,			  
+		minSlides: 3,
+		maxSlides: 3,
+		moveSlides: 1,
+		slideMargin: 15,
+		slideWidth: 110,
+		pager: false, 
+		controls: true
+	});
+	
+	
+	
 	jQuery(window).resize(function () {
 		productGroupSliderCtrl.destroySlider();
 		productGroupSliderCtrl = jQuery('.products-group .list').bxSlider({
