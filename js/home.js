@@ -17,9 +17,10 @@ jQuery(document).ready(function($){
 			}
 			return i;
 		};
-	
+		
 	// INIT SLIDER PRODUCTS
 	productGroupSliderCtrl = productGroupList.bxSlider({
+		useCSS: false,
 		infiniteLoop: false,
 		speed: 4000,
 		pause: 600,			  
@@ -28,19 +29,6 @@ jQuery(document).ready(function($){
 		moveSlides: 1,
 		slideMargin: 0,
 		slideWidth: 293,
-		pager: false, 
-		controls: true
-	});
-	
-	jQuery('.more-views ul').bxSlider({
-		infiniteLoop: false,
-		speed: 4000,
-		pause: 600,			  
-		minSlides: 3,
-		maxSlides: 3,
-		moveSlides: 1,
-		slideMargin: 15,
-		slideWidth: 110,
 		pager: false, 
 		controls: true
 	});
@@ -59,7 +47,6 @@ jQuery(document).ready(function($){
 			pager: false, 
 			controls: true
 		});
-		
 	});
 	
 });

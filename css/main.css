@@ -52,7 +52,7 @@ h1.logo strong{position:absolute;left:-9999px;top:-9999px}
 
 /* brand slider */
 .ma-brand-slider-contain{padding:40px 0 30px;border-top:1px solid #edeff3;background:url(../images/shop-bg.jpg)}
-.ma-brand-slider-contain .bx-wrapper{position:relative;overflow:hidden;box-sizing:content-box;padding-top:56px;margin-top:-60px}
+.ma-brand-slider-contain .bx-wrapper{position:relative;overflow:hidden;box-sizing:content-box;padding-top:56px;top:-60px}
 .ma-brand-slider-contain .bx-viewport{overflow:visible!important;position:relative;left:-38px}
 .ma-brand-slider-contain .bx-slider{height:144px;margin:0;padding:0}
 .ma-brand-slider-contain li{height:144px;width:248px;padding-left:38px}
@@ -161,6 +161,7 @@ h1.logo strong{position:absolute;left:-9999px;top:-9999px}
 
 .icon-cart{width:25px;height:18px;background:url(../images/icon-cart.png)}
 .icon-info{width:21px;height:21px;background:url(../images/icon-info.png)}
+.icon-info:before{background-image:url(../images/icon-info-highlight.png)}
 .button-default{height:34px;cursor:pointer;border-radius:20px;text-align:center}
 .button-default i{display:inline-block;vertical-align:middle;margin-right:5%}
 .button-default span{display:inline-block;font-weight:300;font-size:14px;line-height:32px}
@@ -184,6 +185,17 @@ background: linear-gradient(to bottom,  #ededed 0%,#d3d3d3 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#d3d3d3',GradientType=0 );
 }
 .button-dark span{color:#888}
+.button-dark:hover{border:1px solid #1ab316;border-bottom:1px solid #92b606;background:#9bb805;
+background: -moz-linear-gradient(top,  #9bb805 0%, #6bab09 50%, #099011 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9bb805), color-stop(50%,#6bab09), color-stop(100%,#099011));
+background: -webkit-linear-gradient(top,  #9bb805 0%,#6bab09 50%,#099011 100%);
+background: -o-linear-gradient(top,  #9bb805 0%,#6bab09 50%,#099011 100%);
+background: -ms-linear-gradient(top,  #9bb805 0%,#6bab09 50%,#099011 100%);
+background: linear-gradient(to bottom,  #9bb805 0%,#6bab09 50%,#099011 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bb805', endColorstr='#099011',GradientType=0 );
+}
+.button-dark:hover span{color:#fff}
+.button-dark:hover .icon-info{background-image:url(../images/icon-info-highlight.png)}
 
 .box-wrapper{border:1px solid #e1e4eb;border-radius:20px}
 .box-wrapper .page-title{margin:15px 15px 0}
@@ -243,7 +255,7 @@ textarea.input-text{height:150px}
 	
 	.parentMenu > a span{font-size:12px}
 	.pt_menu + .pt_menu{margin-left:0.4vw}
-	h1.logo img{width:100%}
+	h1.logo{text-align:center}
 }
 
 @media (max-width: 1199px) {

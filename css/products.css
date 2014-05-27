@@ -12,10 +12,10 @@
 .product .action .button-default{width:48%;float:left}
 .product .action .button-default + .button-default{float:right}
 
-.products-group{position:relative;top:-20px}
+.products-group{position:relative;top:-45px}
 .products-group .bx-wrapper{position:relative;box-sizing:content-box;padding-top:20px;margin-top:-25px}
 .products-group .bx-slider{margin:0;padding:0}
-.products-group .bx-controls-direction a{width:35px;height:35px;background:url(../images/arrow-slide-1.png);cursor:pointer;position:absolute;top:0;overflow:hidden;text-indent:-9999px}
+.products-group .bx-controls-direction a{width:35px;height:35px;background:url(../images/arrow-slide-1.png) no-repeat;cursor:pointer;position:absolute;top:0;overflow:hidden;text-indent:-9999px}
 .products-group .bx-controls-direction .bx-prev{right:56px}
 .products-group .bx-controls-direction .bx-next{background-position:100% 0;right:15px}
 .products-group .item-slide{padding:0 15px}
@@ -39,6 +39,7 @@
 @media (max-width: 767px) {
 	.label-pro-new{top:15px}
 	.product{padding:15px 0}
+	.products-group .bx-wrapper{padding-top:30px}
 }
 
 @media (min-width: 768px) {
