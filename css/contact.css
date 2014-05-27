@@ -1,3 +1,6 @@
-#contact .row > *{margin-bottom:20px}
-#contact label{color:#616161;font-weight:600}
-#contact label em{font-style:normal;color:#ec7493}
+#contactForm > .row > *{margin-bottom:20px}
+#contactForm > .row > * > label{color:#616161;font-weight:600}
+#contactForm > .row > * > label em{font-style:normal;color:#ec7493}
+#contactForm .checkbox label{font-size:14px;font-weight:400;color:#868686;display:inline-block}
+#contactForm .checkbox{display:inline-block;width:135px;font-size:14px}
+#contactForm .checkboxes{font-size:0}

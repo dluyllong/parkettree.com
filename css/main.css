@@ -191,6 +191,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 .input-text{border:1px solid #e1e4eb;padding:5px;height:31px;line-height:21px;width:100%;font-size:14px;resize:none}
 textarea.input-text{height:150px}
 
+.checkbox{margin:0;padding:0;background:url(../images/checkbox-checked.png) no-repeat -9999px -9999px}
+.checkbox label{padding-left:20px;background:url(../images/checkbox.png) no-repeat 0 50%}
+.checkbox input{visibility:hidden}
+.checkbox.checked label{background-image:url(../images/checkbox-checked.png)}
+
 @media (max-width: 480px) {
 	.nav-container{position:absolute;left:-9999px;top:-9999px}
 	.nav-container-mobile{text-align:center;padding:20px 0 0}

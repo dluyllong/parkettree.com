@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+	'use strict';
 	
 	// RETURN TOP BUTTON
 	jQuery('#back-top').click(function () {
@@ -60,4 +61,23 @@ jQuery(document).ready(function($){
 		controls: true,
 	});
 	
+	initPage();
+	
+	function initPage () {
+		jQuery('.checkbox input').prop('checked',false);
+		jQuery('.checkbox label').click(function(){
+			var thisEl = jQuery(this),
+				parent = thisEl.parent(),
+				input = thisEl.find('input');
+			
+			input.prop('checked',!input.prop('checked'));
+			
+			if ( input.prop('checked') ) {
+				parent.addClass('checked');
+			} else {
+				parent.removeClass('checked');
+			}
+			return false;
+		});
+	}
 });
